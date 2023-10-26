@@ -28,7 +28,7 @@ println!("result: {}", TiengViet::parse("Xin chào việt nam")); // result: Xin
 ### You might also like
 
 - [vietnamese](https://github.com/harrytran103/vietnamese) - ✂️🇻🇳 A helpful tool for removing Vietnamese accents in nodejs.
-- [vietnamese](https://github.com/tvc12/tiengviet) - ✂️🇻🇳 An implement tiengviet in dart.
+- [tiengviet](https://github.com/tvc12/tiengviet) - ✂️🇻🇳 An implement tiengviet in dart.
 
 
 ### Contributors
