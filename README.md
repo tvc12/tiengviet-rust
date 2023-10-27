@@ -5,7 +5,7 @@ Convert vietnamese sign to unsign easily like eat 🥞🥞🥞.
 ![Build Status](https://img.shields.io/travis/com/tvc12/tiengviet-rust?style=flat-square)
 ![Contribute](https://img.shields.io/github/contributors/tvc12/tiengviet-rust.svg?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/tvc12/tiengviet-rust.svg?style=flat-square)
-[![Hits-of-Code](https://hitsofcode.com/github/tvc12/tiengviet-rust)](https://hitsofcode.com/github/tvc12/tiengviet-rust?branch=main)
+[![Hits-of-Code](https://hitsofcode.com/github/tvc12/tiengviet-rust?branch=main)](https://hitsofcode.com/github/tvc12/tiengviet-rust?branch=main)
 
 🇻🇳 Công cụ chuyển đổi Tiếng Việt có dấu sang không dấu dễ hơn là ăn bánh 🥞🥞🥞🥞.
 
@@ -43,4 +43,4 @@ let result: String = tiengviet::parse(&String.from("Xin chào việt nam");
 
 ### License
 
-[BSD 3-Clause @tvc12](./LICENSE)
+[MIT @tvc12](./LICENSE)
