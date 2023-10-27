@@ -2,7 +2,7 @@
 
 Convert vietnamese sign to unsign easily like eat 🥞🥞🥞.
 
-![Build Status](https://img.shields.io/travis/com/tvc12/tiengviet-rust?style=flat-square)
+[![Quick check](https://github.com/tvc12/tiengviet-rust/actions/workflows/quick_check.yml/badge.svg)](https://github.com/tvc12/tiengviet-rust/actions/workflows/quick_check.yml)
 ![Contribute](https://img.shields.io/github/contributors/tvc12/tiengviet-rust.svg?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/tvc12/tiengviet-rust.svg?style=flat-square)
 [![Hits-of-Code](https://hitsofcode.com/github/tvc12/tiengviet-rust?branch=main)](https://hitsofcode.com/github/tvc12/tiengviet-rust?branch=main)
