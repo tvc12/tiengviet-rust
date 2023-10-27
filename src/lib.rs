@@ -1,9 +1,8 @@
 use std::collections::HashMap;
-    
-pub struct TiengViet {
-    _dictionary: HashMap<char, char>
-}
 
+pub struct TiengViet {
+    _dictionary: HashMap<char, char>,
+}
 
 impl TiengViet {
     pub fn new() -> TiengViet {
@@ -12,16 +11,15 @@ impl TiengViet {
             dictionary.insert(c, c2);
         }
         return TiengViet {
-            _dictionary: dictionary
+            _dictionary: dictionary,
         }
     }
     pub fn parse(&self, input: &String) -> String {
-
         let mut output: String = String::new();
         for c in input.chars() {
             match self._dictionary.get(&c) {
                 Some(v) => output.push(*v),
-                None => output.push(c)
+                None => output.push(c),
             }
         }
         output

@@ -7,8 +7,15 @@ mod tests {
         let tiengviet = TiengViet::new();
         let result = tiengviet.parse(&String::from("Tests can be grouped "));
         assert_eq!(result, String::from("Tests can be grouped "));
-        let result = tiengviet.parse(&String::from("Each group\'s description is added to the beginning of its test\'s descriptions"));
-        assert_eq!(result, String::from("Each group\'s description is added to the beginning of its test\'s descriptions"));
+        let result = tiengviet.parse(&String::from(
+            "Each group\'s description is added to the beginning of its test\'s descriptions",
+        ));
+        assert_eq!(
+            result,
+            String::from(
+                "Each group\'s description is added to the beginning of its test\'s descriptions"
+            )
+        );
     }
 
     #[test]
@@ -24,12 +31,25 @@ mod tests {
     #[test]
     fn it_work_vietnamese_sign() {
         let tiengviet = TiengViet::new();
-        let result = tiengviet.parse(&String::from("Văn học theo cách nói chung nhất, là bất kỳ tác phẩm nào bằng văn bản"));
-        assert_eq!(result, String::from("Van hoc theo cach noi chung nhat, la bat ky tac pham nao bang van ban"));
-        let result = tiengviet.parse(&String::from("VĂN HỌC THEO CÁCH NÓI CHUNG NHẤT, LÀ BẤT KỲ TÁC PHẨM NÀO BẰNG VĂN BẢN"));
-        assert_eq!(result, String::from("VAN HOC THEO CACH NOI CHUNG NHAT, LA BAT KY TAC PHAM NAO BANG VAN BAN"));
+        let result = tiengviet.parse(&String::from(
+            "Văn học theo cách nói chung nhất, là bất kỳ tác phẩm nào bằng văn bản",
+        ));
+        assert_eq!(
+            result,
+            String::from("Van hoc theo cach noi chung nhat, la bat ky tac pham nao bang van ban")
+        );
+        let result = tiengviet.parse(&String::from(
+            "VĂN HỌC THEO CÁCH NÓI CHUNG NHẤT, LÀ BẤT KỲ TÁC PHẨM NÀO BẰNG VĂN BẢN",
+        ));
+        assert_eq!(
+            result,
+            String::from("VAN HOC THEO CACH NOI CHUNG NHAT, LA BAT KY TAC PHAM NAO BANG VAN BAN")
+        );
         let result = tiengviet.parse(&String::from("Bạn đang có ý tưởng về 1 công cụ nào đó"));
-        assert_eq!(result, String::from("Ban dang co y tuong ve 1 cong cu nao do"));
+        assert_eq!(
+            result,
+            String::from("Ban dang co y tuong ve 1 cong cu nao do")
+        );
     }
 
     #[test]
